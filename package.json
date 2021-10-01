@@ -4,8 +4,8 @@
   "description": "nios is react project with babel and webpack configurations",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=DEV webpack-dev-server",
-    "build-prod": "cross-env NODE_ENV=PROD webpack"
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "build-prod": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",

@@ -4,9 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webPack = require("webpack");
 
 module.exports = {
+    mode: process.env.NODE_ENV,
     output: {
         path: path.resolve(__dirname, "build"),
-        filename: "bundle.js"
+        filename: "bundle.js",
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx"]
@@ -61,5 +62,8 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         port: 5000
-    }
+    },
+    performance: {
+        hints: false
+      },
 }
